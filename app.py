@@ -66,7 +66,7 @@ def index2():
 @app.route("/article",methods=["POST","GET"])
 def article():
     prompt=request.form['name_input']
-    blogT = blog.generateBlogTopics(prompt)
+    blogT = blog.generateBlogTopicsPipe(prompt)
     #flash("The Keyword is " + str(request.form['name_input'])+".")
     flash(str(blogT))
     return render_template("index2.html")
