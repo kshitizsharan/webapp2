@@ -5,9 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Article Generator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
-<body style="background-color:grey;">
-<div align-content="center">
+<body style="background-color:SlateGrey;">
+
 
 
 <img  src="https://raw.githubusercontent.com/kshitizsharan/MERN-Dev/master/Head-removebg-preview.png" alt="https://raw.githubusercontent.com/kshitizsharan/MERN-Dev/master/Head-removebg-preview.png">
@@ -20,12 +21,15 @@
         <input type="text" name="name_input">
         <br>
         <input type="submit" value="ARTICLE" id="article">
+        <br><br><br>
+        
+
         {% for message in get_flashed_messages()%}
             <p> {{message}} </p>
         {% endfor %}
         
 </form>
-</div>
+<p align="center"><a href=/ ><button class=grey style="height:75px;width:150px" id="article1">Want To Have More Fun?</button></a></p>
 </body>
 
 </html>

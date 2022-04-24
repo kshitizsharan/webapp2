@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    background-color: SlateGrey;
+    margin-top: 20px 20px;
+}
+p {
+    color: white;
+    font-family: Shanti;
+    font-size: 1.2em;
+    display: inline-block;
+    margin:  20px;
+}
+
+input {
+  width: 300px;
+  margin: 20px 20px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-family: Shanti;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border: solid 5px #00FFCE;
+}
+
+#article {
+    background-color: PaleVioletRed;
+    border:  none;
+    width:  200px;
+    color: white;
+}
+#article1 {
+    background-color: rgb(119, 216, 112);
+    border:  none;
+    width:  400px;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: Shanti;
+}
+#article:hover {
+    background-color: MediumVioletRed;
+}
+#article1:hover {
+    background-color: rgb(28, 144, 13);
+}
