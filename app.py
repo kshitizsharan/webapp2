@@ -35,7 +35,7 @@ app.config.from_object(config.config['development'])
 app.register_error_handler(404, page_not_found)
 
 
-@app.route('/', methods=["GET", "POST"])
+@app.route('/welcome', methods=["GET", "POST"])
 def index():
 
     if request.method == 'POST':
@@ -58,7 +58,7 @@ def index():
     return render_template('index.html', **locals())
 
 
-@app.route('/welcomeToMyWorld', methods=["GET", "POST"])
+@app.route('/', methods=["GET", "POST"])
 def index2():
     #flash("ENTER KEYWORD")
     return render_template("index2.html")
