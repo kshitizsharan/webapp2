@@ -21,7 +21,7 @@
 
       <p class="text-center">Automate content creation for companies which create brand campaigns, article for promotions and also create blogs.</p>
 
-      <div class="row">
+      <div class="row d-grid gap-2 col-6 mx-auto">
         <div class="col-lg-6">
           <form class="" action="/" method="post">
             <div class="mb-3">
@@ -30,11 +30,11 @@
             </div>
             <input type="hidden" name="form1" value="form1">
 
-            <button type="submit" id="blogTopicButton" class="btn btn-dark">Generate Blog Ideas</button>
+            <button type="submit" id="blogTopicButton" class="btn btn-dark ">Generate Blog Ideas</button>
           </form>
         </div>
 
-
+        <br>
 
         <div class="col-lg-6">
           1. {{blogTopicIdeas|safe}}
@@ -59,7 +59,7 @@
           </form>
         </div>
 
-
+        <br>
 
         <div class="col-lg-6">
           {{blogSectionIdeas|safe}}
@@ -83,7 +83,7 @@
           </form>
         </div>
 
-
+        <br>
 
         <div class="col-lg-6">
           {{blogExpanded|safe}}
