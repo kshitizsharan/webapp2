@@ -1,7 +1,7 @@
 import os
 import openai
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 def generateBlogTopics(prompt1):
     response = openai.Completion.create(
