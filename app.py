@@ -1,23 +1,3 @@
-'''
-from flask import Flask, render_template, request, flash
-import blog
-
-app = Flask(__name__)
-app.secret_key = "dumbfoundfuckalls"
-
-@app.route("/")
-def index():
-    #flash("ENTER KEYWORD")
-    return render_template("index.html")
-
-@app.route("/article",methods=["POST","GET"])
-def article():
-    flash("The Keyword is " + str(request.form['name_input'])+".")
-    return render_template("index.html")
-
-'''
-
-from cmd import PROMPT
 from flask import Flask, render_template, request,flash
 import config
 import blog
@@ -29,7 +9,7 @@ def page_not_found(e):
 
 
 app = Flask(__name__)
-app.secret_key = "dumbfoundfuckalls"
+app.secret_key = "zdrtfccfgyvbhuibnjijnqsdvbnhtre"
 app.config.from_object(config.config['development'])
 
 app.register_error_handler(404, page_not_found)
