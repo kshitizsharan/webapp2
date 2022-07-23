@@ -2,8 +2,8 @@ import os
 import openai
 import re
 
-key1= 'sk-jziF2dNB5GdlLPtT9X9dT3'
-key2='BlbkFJHgRWMdMb4rv6D4GuWj6z'
+key1= 'sk-rSTVWFtPfxKuFs7IXeRtT3'
+key2='BlbkFJ50KJZ0UA8So2Z1k2iVS7'
 openai.api_key = f"{key1}{key2}"
 
 
